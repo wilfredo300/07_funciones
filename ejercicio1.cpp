@@ -2,24 +2,24 @@
 using namespace std;
 //prototipos de funciones resta y producto
 
-void resta(int val1, int val2);
-int suma(int val1, int val2);
-int producto (int val1, int val2);
+void resta(float val1, float val2);
+float suma(float val1, float val2);
+float producto (float val1, float val2);
 float division (float val1, float val2);
 
 //definición de la función resta
-void resta( int val1,int val2){
-	int sustrac; //variable local
+void resta( float val1,float val2){
+	float sustrac; //variable local
 	sustrac=val1-val2;
 	cout<<"\nLa resta de "<<val1<<" - "<<val2<<" es: "<<sustrac;
 }
 
-int suma(int val1, int val2){
+float suma(float val1, float val2){
 	return val1 + val2;
 }
 //definición de la función producto
-int producto(int val1, int val2){
-	int prod; //variable local
+float producto(float val1, float val2){
+	float prod; //variable local
 	prod = val1*val2;
 	return(prod);
 }
@@ -31,8 +31,8 @@ float division(float val1, float val2){
 }
 
 int main(){//funcion principal main
-	int num1,num2,resultado;
-	int sum1,sum2;
+	float num1,num2,resultado;
+	float sum1,sum2;
 	float div1,div2;
 	cout<<"Ingrese el primer numero: "; cin>>num1;
 	cout<<"Ingrese el segundo numero: "; cin>>num2;
