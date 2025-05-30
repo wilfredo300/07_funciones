@@ -16,16 +16,17 @@ int perfecto(int a){
 }
 int main(){
 	
-	int n,a;
-	while(a>=0){
-	cout<<"Ingresa un numero entero para determinar si es perfecto: ";
-	cin>>a;
-	n=perfecto(a);
-	if(n==1){
-		cout<<a<<" es perfecto."<<endl;
-	}else{
-		cout<<a<<" no es perfecto"<<endl;
-	}
+	int limi,lims,i,n;
+    cout<<"Programa que escribe los numeros perfectos entre 2 numeros:"<<endl;
+    cout<<"Ingresa limite inferior: ";
+    cin>>limi;
+    cout<<"Ingresa limite superior: ";
+    cin>>lims;
+	for(i=limi;i<=lims;i++){
+        n=perfecto(i);
+        if(n==1){
+            cout<<i<<" "<<endl;
+        }
 	}
 	return 0;
 }
