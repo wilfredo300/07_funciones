@@ -1,11 +1,18 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int n1,n2,n3,n,i,s(0);
+	int n1,n2,n3,n(-1),i,s(0);
+	
 	char v;
 	cout<<"Programa que muestra los primeros n terminos de la serie Fibonacci: "<<endl;
 	cout<<"Ingresa la cantidad de terminos a mostrar: ";
-	cin>>n;
+	
+	while(n<=0){
+		cin>>n;
+		if(n<=0){
+			cout<<"Ingresa un numero mayor que 0"<<endl;
+		}
+	}
 	n1=-1;
 	n2=1;
 	for(i=1;i<=n;i++){
