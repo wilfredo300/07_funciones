@@ -16,15 +16,41 @@ bool esprimo(unsigned int n){
 }
 
 int main(){
-	int n;
+	int n,n1,n2,i;
 	bool a;
-	cin>>n;
-	a=esprimo(n);
-	if(a==true){
-		cout<<"El numero es primo";
-	}else{
-		cout<<"El numero no es primo";
+	char op;
+	cout<<	"Programa de numeros primos: "<<endl;
+	cout<<	"Elige una opción: "<<endl;
+	cout<<	"a.Ingresar un numero para saber si es primo."<<endl;
+	cout<<	"b.Escribir todos los primos entre 2 numeros"<<endl;
+	cin>>op;
+	switch(op){
+		case 'a':
+		case 'A':
+			cout<<"Ingrese un numero para determinar si es primo: \n";
+			cin>>n;
+			a=esprimo(n);
+			if(a==true){
+				cout<<n<<" es primo";
+			}else{
+				cout<<n<<" no es primo";
+			}	
+			break;
+		case 'b':	
+		case 'B':
+			cout<<"Ingrese limite inferior: \n";
+			cin>>n1;
+			cout<<"Ingrese limite superior: \n";
+			cin>>n2;
+			for(i=n1;i<=n2;i++){
+				n=esprimo(i);
+				if(n==true){
+					cout<<i<<" ";
+				}
+			}			
+			break;
+		default: 
+			break;
 	}
 	return 0;
-	
 }
