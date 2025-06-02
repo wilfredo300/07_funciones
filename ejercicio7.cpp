@@ -3,12 +3,18 @@ using namespace std;
 long long int factorial(int a);
 int main(){
     int m,n,C;
-    cout<<"Escribe el valor de m:\n";
+    cout<<  "------------------------------------------------------------\n";
+    cout<<  "\n       Programa para calcular las combinatorias  \n\n"
+            "                            m!\n"
+            "                C(m,n) = --------\n"
+            "                         n!(m-n)!\n"<<endl;
+    cout<<  "------------------------------------------------------------\n";
+    cout<<  "Escribe el valor de m: ";
     cin>>m;
-    cout<<"Escribe el valor de n:\n";
+    cout<<  "Escribe el valor de n: ";
     cin>>n;
     C= factorial(m)/(factorial(n)*(factorial(m-n)));
-    cout<<C;
+    cout<<  "La cantidad de combinaciones posibles es: "<<C<<endl;
     return 0;
 }
 
