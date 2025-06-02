@@ -15,6 +15,7 @@ int main(){
     cin>>n;
     C= factorial(m)/(factorial(n)*(factorial(m-n)));
     cout<<  "La cantidad de combinaciones posibles es: "<<C<<endl;
+    cout<<  "------------------------------------------------------------\n\n";
     return 0;
 }
 
