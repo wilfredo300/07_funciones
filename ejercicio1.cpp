@@ -56,7 +56,7 @@ int main(){//funcion principal main
 	cout<<"\nLa division entre "<<num1<<" y "<<num2<<" es: "<<resultado;
 	cout<<"\nLa division entre "<<num2<<" y "<<num1<<" es: "<<resultado;
 	
-	
+	cout<<"holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
 	return 0;
 	
 }
